@@ -4,9 +4,9 @@ def draw_board(emplacements):
     Args:
         emplacements (dict): dictionnaire comportant les cases du jeu
     """
-    board=(f"|{emplacements[1]}|{emplacements[2]}|{emplacements[3]}|\n"
+    board=(f"|{emplacements[7]}|{emplacements[8]}|{emplacements[9]}|\n"
            f"|{emplacements[4]}|{emplacements[5]}|{emplacements[6]}|\n"
-           f"|{emplacements[7]}|{emplacements[8]}|{emplacements[9]}|")
+           f"|{emplacements[1]}|{emplacements[2]}|{emplacements[3]}|")
     print(board)
     
 # Fonction d'impression de la grille
