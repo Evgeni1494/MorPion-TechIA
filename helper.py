@@ -26,6 +26,14 @@ def tour_jeu(tour):
 # fonction qui verifie les tour du jeu
 
 def jeu_gagne(emplacements):
+  """Verification si le jeu est gagné ou pas.
+
+  Args:
+      Prend les valeurs du dico emplacements et verifie si 3 d'entre elles sont idéntiques.
+
+  Returns:
+      Renvoi un vrai ou faux dans le cas ou il y a partie gagné ou pas respectivement.
+  """
   if   (emplacements[1]==emplacements[2]==emplacements[3]) \
     or (emplacements[4]==emplacements[5]==emplacements[6]) \
     or (emplacements[7]==emplacements[8]==emplacements[9]):

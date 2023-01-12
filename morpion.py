@@ -3,7 +3,8 @@ import os
 emplacements = {1:"1",2:"2",3:"3",4:"4",
                  5:"5",6:"6",7:"7",8:"8",9:"9"}
 
-draw_board(emplacements)
+
+#draw_board(emplacements)
 
 # Boucle du jeu
 tour_avant= -1
@@ -13,14 +14,13 @@ tour = 0
 while jeu_en_cours:
     # Refaire la grille a chaque fois que un choix est fait
     os.system("cls" if os.name == "nt" else "clear")
+    #dessiner la grille
     draw_board(emplacements)
     # verifie que la case selectionnée est bien valide
     if tour_avant == tour:
         print("La case selectioné est déja prise. Choisisez une autre case.")
     tour_avant == tour
     print("Tour du jouer " + str((tour%2)+1) + ": faite votre choix.")
-    #dessiner la grille
-    draw_board(emplacements)
     # obtenir l'input du jouer
     choix = input()
     if choix == 'q':
