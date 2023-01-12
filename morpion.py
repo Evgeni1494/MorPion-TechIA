@@ -19,7 +19,7 @@ while jeu_en_cours:
     # verifie que la case selectionnée est bien valide
     if tour_avant == tour:
         print("La case selectioné est déja prise. Choisisez une autre case.")
-    tour_avant == tour
+        tour_avant == tour
     print("Tour du jouer " + str((tour%2)+1) + ": faite votre choix.")
     # obtenir l'input du jouer
     choix = input()
